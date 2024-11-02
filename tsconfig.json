@@ -1,27 +1,34 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
+      "target": "ESNext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": false,
+      "skipLibCheck": true,
+      "strict": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "react-jsx",
+      "incremental": true,
+      "types": ["vitest/globals"],
+      "plugins": [
+          {
+              "name": "next"
+          }
+      ],
+      "paths": {
+          "%/*": ["./src/*"]
       }
-    ],
-    "paths": {
-      "%/*": ["./src/*"]
-    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+      "next-env.d.ts",
+      "**/*.ts",
+      "**/*.tsx",
+      ".next/types/**/*.ts",
+      "global-types.d.ts"
+, "jest.config.ts", "jest.setup.js"  ],
   "exclude": ["node_modules"]
 }
