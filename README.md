@@ -150,4 +150,4 @@ status code 204, no content
 - Updated `TitleEntity` with a column for subject.
 - Added `deleteTitleHandler` for deleting titles.
 - Disabled `validateIp`function in routeMiddleware, because `req-bans` module is not functional.
-- Added sort order descending by 'createdAt` for presenting last added title at the top of result
+- Added sort order descending by `createdAt` for presenting last added title at the top of result.
